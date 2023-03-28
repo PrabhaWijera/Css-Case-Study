@@ -4,122 +4,85 @@
     <meta charset="UTF-8">
     <title>Assigment-ijse</title>
     <style>
-        .hd {
+
+        #hd {
             background-color: white;
             border: 2px solid black;
-            width: 100%;
-            height: 50px;
-            position: fixed;
-            text-align: center;
-            left: 0;
-
+            width: 99vw;
+            padding: 3px;
+            position: absolute;
+            top: 0;
+            left: 12px;
+            right: 0;
+            margin-right: 0;
         }
 
-        .ulhd {
+        #ulhd {
             position: absolute;
-            border: 2px solid red;
+            font-weight: bold;
+            font-family: "Adobe Gothic Std B";
             right: 25px;
 
         }
 
-        .ulhd li {
+        #ulhd li {
             display: inline;
             text-space: 2px;
         }
 
-        .navi-img {
-            border: 1px solid red;
+        #navi-img {
+
             width: fit-content;
         }
-
-        .navi-img > img {
+        #navi-img > img {
             width: 130px;
             height: 45px;
-
         }
-
-        .side-bar {
-            background-color: purple;
-            width: 205px;
-            height: 800px;
+        section{
+            background-color: orange;
+            width: 1530px;
+            height: 700px;
+            display: block;
             position: absolute;
+            left: 0;
             top: 60px;
-            left: 0px;
         }
-
-        .side-bar-list {
-            color: white;
-            width: fit-content;
-            height: 100px;
+        section>div:first-child{
+            width: 250px;
+            height: 700px;
+            background-color: crimson;
             position: absolute;
-            top: 80px;
+            left: 0;
         }
-
-        .side-bar-list li {
+        section>div:first-child ul>li{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
             display: block;
         }
-
-        .section-main {
-            border: 2px solid blue;
-            width: 85%;
-            height: 793px;
-            position: relative;
-            left: 197px;
-            top: 54px;
-            right: 0;
-        }
-
-        .d1 {
-            background-color: orange;
-            width: 358px;
-            height: 200px;
+        #box2{
+            background-color: white;
+            width: 1280px;
+            height: 230px;
             position: relative;
             top: 0;
-
-
+            left: 250px;
         }
-
-        .d2 {
-            background-color: gold;
-            width: 358px;
-            height: 200px;
+        #box2>div:first-child{
+            background-color: deepskyblue;
+            border: 1px solid black;
+            width: 426.6px;
+            height: 230px;
             position: absolute;
-            top: 0;
-            left: 358px;
+            left: 0;
+            top: 0px;
             margin: auto;
-
         }
-
-        .d3 {
-            background-color: chartreuse;
-            width: 358px;
-            height: 200px;
-            position: absolute;
-            top: 0;
-            right: 0px;
-        }
-       .text{
-           width: fit-content;
-           position: relative;
-           left: 0;
-           right: 0;
-       }
-        .text p{
-            font-size: 16px;
-        }
-        footer{
-            border: 2px solid green;
-            background-color: darkgray;
-            width: 100%;
-            height: 25px;
-            position: absolute;
-            left: 0px;
-            right: 0;
-            bottom: 0;
-        }
-
-        footer>p{
-            width: fit-content;
+        #box2>div:nth-child(2){
+            background-color: deepskyblue;
+            width: 426.6px;
+            height: 230px;
+            border: 1px solid black;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -127,78 +90,79 @@
             right: 0;
             margin: auto;
         }
+        #box2>div:nth-child(3){
+            background-color: deepskyblue;
+            border: 1px solid black;
+            width: 426.6px;
+            height: 230px;
+            position: absolute;
+            right: 0;
+        }
+        #box-3{
+            background-color:gray;
+            width:100vw;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+        }
+        #box-3>p{
+            color: white;
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            top: 8px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+
+
+
 
 
     </style>
 </head>
 <body>
 <!--==========================================Head options===============================-->
-<header class="hd">
-    <nav class="headnav">
-        <ul class="ulhd">
+<header id="hd">
+    <nav id="headnav">
+        <ul id="ulhd">
             <li>Home</li>&nbsp;
             <li>Service</li>&nbsp;
             <li>Contact</li>&nbsp;
             <li>About-Us</li>&nbsp;
         </ul>
     </nav>
-    <div class="navi-img">
+    <div id="navi-img">
         <img src="assets/img/ijse.png" alt="assets/img/ijse.png">
     </div>
 </header>
 <!--=============================================================================-->
-
-
-<!--===========================================Aside bar=========================================-->
-<aside class="side-bar">
-    <nav>
-        <ul class="side-bar-list">
-
-            <li><b>Home</b></li>&nbsp;
-            <li><b>Service</b></li>&nbsp;
-            <li><b>Contact</b></li>&nbsp;
-            <li><b>About-Us</b></li>&nbsp;
-        </ul>
-    </nav>
-</aside>
-<!--====================================================================-->
-
-<section class="section-main">
-    <div class="d1"></div>
-    <div class="d2"></div>
-    <div class="d3"></div>
-<div class="text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis deleniti expedita, facilis
-        fugiat minima non rem sapiente sed sit, ullam voluptates voluptatibus! Cumque ipsa magni neque quae quod?</p>
-
+<section>
+<div>
+    <ul>
+        <li>Home</li>&nbsp;
+        <li>Services</li>&nbsp;
+        <li>Contacts</li>&nbsp;
+        <li>About us</li>&nbsp;
+    </ul>
 </div>
-</section>
-<!--==========================================================================-->
 
-<footer>
-    <p>Develope By IJSE</p>
-</footer>
+<div id="box2">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+    <div id="box-3">
+        <p>Developed By IJSE</p>
+    </div>
+</section>
 
 </body>
 </html>
