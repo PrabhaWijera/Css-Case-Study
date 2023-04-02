@@ -3,213 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <title>Assigment-ijse</title>
+    <link rel="stylesheet" href="assets/fontsawesom/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"><!--free ekk gnn-->
     <style>
 
-        #hd {
-            background-color: white;
-            border: 2px solid black;
-            width: 99vw;
-            padding: 3px;
-            position: absolute;
-            top: 0;
-            left: 0px;
-            right: 0;
-            margin-right: 0;
+        * {
+            font-family: 'Ubuntu', sans-serif;
         }
 
-        #ulhd {
-            position: absolute;
-            font-weight: bold;
-            font-family: "Adobe Gothic Std B";
-            right: 25px;
-
+        body {
+            margin: 0;
         }
 
-        #ulhd li {
-            display: inline;
-            text-space: 2px;
-        }
-
-        #navi-img {
-
-            width: fit-content;
-        }
-
-        #navi-img > img {
-            width: 130px;
-            height: 45px;
-        }
-
-        section {
-            background-color: orange;
-            width: 1530px;
-            height: 700px;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 60px;
-        }
-
-        section > div:first-child {
-            width: 250px;
-            height: 700px;
-            background-color: crimson;
-            position: absolute;
-            left: 0;
-        }
-
-        section > div:first-child ul > li {
-            font-size: 20px;
-            color: white;
-            font-weight: bold;
-            display: block;
-        }
-
-        #box2 {
-            background-color: white;
-            width: 1280px;
-            height: 230px;
+        header {
             position: relative;
-            top: 0;
-            left: 250px;
+            border: 1px solid green;
+            padding: 10px;
+            box-shadow: 0px 2px;
         }
 
-        #box2 > div:first-child {
-            background-color: gold;
-            border: 1px solid black;
-            width: 426.6px;
-            height: 230px;
+        header>nav {
             position: absolute;
-            left: 0;
-            top: 0px;
-            margin: auto;
+            right: 10px;
+            top: 10px;
         }
 
-        #box2 > div:nth-child(2) {
-            background-color: deepskyblue;
-            width: 426.6px;
-            height: 230px;
-            border: 1px solid black;
+        header>nav>ul {
+            margin: 0;
+        }
+
+        header>nav>ul>li {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        main {
+            position: relative;
+        }
+
+        main > aside {
             position: absolute;
+            background-color: purple;
+            width: 200px;
             top: 0;
             bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        #box2 > div:nth-child(3) {
-            background-color: pink;
-            border: 1px solid black;
-            width: 426.6px;
-            height: 230px;
-            position: absolute;
-            right: 0;
-        }
-
-        #box-3 {
-            background-color: gray;
-            width: 100vw;
-            height: 40px;
-            position: absolute;
-            bottom: 0;
-            margin: auto;
-        }
-
-        #box-3 > p {
             color: white;
-            display: block;
-            font-size: 20px;
-            text-align: center;
-            font-weight: bold;
+        }
+
+        main > aside > nav > ul {
+            list-style-type: none;
+        }
+
+        main > aside > nav > ul > li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        main > section {
+            margin-left: 200px;
+            padding: 5px;
+        }
+
+        main>section>p:first-child {
+            margin-top: 0;
+        }
+
+        main>section>p:last-child {
+            margin-bottom: 0;
+        }
+
+        main>section>div {
+            width: 100%;
+            height: 300px;
+            border: 1px solid green;
+            position: relative;
+        }
+
+        main>section>div>div {
+            width: calc(100%/3);
+            height: 300px;
             position: absolute;
-            top: 8px;
-            bottom: 0;
+
+            background-size: cover;
+            background-position: center;
+            border: 1px solid green;
+        }
+
+        main>section>div>div:first-child {
+        }
+
+        main>section>div>div:nth-child(2) {
             left: 0;
             right: 0;
             margin: auto;
+
+            background-color: blue;
         }
 
-        #p-box {
-            background-color: white;
-            width: 1280px;
-            height: fit-content;
-            position: absolute;
+        main>section>div>div:nth-child(3) {
             right: 0;
-            margin: auto;
+
+            background-color: green;
         }
 
-        #p-box p {
-            color: black;
-            font-weight: bold;
-            font-size: 20px;
-            font-family: "Adobe Arabic";
+        footer {
+            text-align: center;
+            background-color: gray;
+            padding: 20px;
         }
 
+        footer>h4 {
+            margin: 0;
+        }
 
     </style>
+
 </head>
 <body>
-<!--==========================================Head options===============================-->
-<header id="hd">
-    <nav id="headnav">
-        <ul id="ulhd">
-            <li>Home</li>&nbsp;
-            <li>Service</li>&nbsp;
-            <li>Contact</li>&nbsp;
-            <li>About-Us</li>&nbsp;
+
+<header>
+    <img src="https://www.ijse.lk/images/logos/ijse.png" title="www.ijse.lk" alt="ijse.png" width="150">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-solid fa-compass"></i> Service</li>
+            <li><i class="fa-solid fa-phone"></i> Contact</li>
+            <li><i class="fa-solid fa-building"></i> About us</li>
         </ul>
     </nav>
-    <div id="navi-img">
-        <img alt="assets/img/ijse.png" src="assets/img/ijse.png">
-    </div>
 </header>
-<!--=============================================================================-->
+<main>
 
-<section>
-    <div>
-        <ul>
-            <li>Home</li>&nbsp;
-            <li>Services</li>&nbsp;
-            <li>Contacts</li>&nbsp;
-            <li>About us</li>&nbsp;
-        </ul>
-    </div>
-    <div id="box2">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <aside>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-compass"></i> Service</li>
+                <li><i class="fa-solid fa-phone"></i> Contact</li>
+                <li><i class="fa-solid fa-building"></i> About us</li>
+            </ul>
+        </nav>
+    </aside>
+    <section>
 
-    <div id="p-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur atque corporis
-            delectus dignissimos ducimus enim est in libero maiores, nam nesciunt nihil, qui sed tenetur. Esse,
-            quos.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+    </section>
 
-    </div>
-    <div id="box-3">
-        <p>Developed By IJSE</p>
-    </div>
-</section>
+</main>
+<footer>
+    <h4>Developed By IJSE</h4>
+</footer>
 
 </body>
 </html>

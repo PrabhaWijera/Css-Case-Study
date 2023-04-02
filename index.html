@@ -2,41 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First-Activity</title>
+    <title>First-Activity-1</title>
 
     <style>
         .full-box{
             background-color: pink;
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
+            left: -8px;
+            top: -8px;
+
+
         }
         .box-1{
             background-color: red;
-            width: 50%;
-            height: 50%;
+            width: 50vw;
+            height: 50vh;
             position: absolute;
             top: 0;
             left: 0;
         }
         .box-2{
             background-color: green;
-            width: 50%;
-            height: 50%;
+            width: 50vw;
+            height: 50vh;
             position: absolute;
             right: 0;
         }
         .box-3{
             background-color: yellow;
-            width: 50%;
-            height: 50%;
+            width: 50vw;
+            height: 50vh;
             position: absolute;
             bottom: 0;
         }
         .box-4{
             background-color: deeppink;
-            width: 50%;
-            height: 50%;
+            width: 50vw;
+            height: 50vh;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -160,7 +164,8 @@
             background-color: white;
             width: 120px;
             height: 120px;
-            border-radius: 100%;
+         border-radius: 100%;
+            /*border-bottom-right-radius: 100%;*/
             position: relative;
             left: -45px;
             top: -50px;
@@ -170,19 +175,23 @@
             background-color: white;
             width: 120px;
             height: 120px;
-            border-radius: 100%;
-            position: relative;
-            left: 575px;
-            top:-170px;
+            border-radius: 0 0 12rem 12rem;
+            position: absolute;
+            left: 0px;
+            top:-45px;
+            right: 0;
+            margin: auto;
         }
         .coner-3{
             background-color: white;
             width: 120px;
             height: 120px;
-            border-radius: 100%;
-            position: relative;
-            bottom: -550px;
-            left: -50px;
+            border-radius: 12rem 12rem 0 0;
+            position: absolute;
+            bottom: -45px;
+            left: 0px;
+            right: 0;
+            margin: auto;
         }
         .coner-4{
             background-color: white;
@@ -209,7 +218,8 @@
             border-radius: 100%;
             position: absolute;
             bottom: -50px;
-            left: 570px;
+            left: -8px;
+            margin: auto;
         }
 
 
